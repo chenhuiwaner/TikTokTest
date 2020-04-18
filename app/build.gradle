@@ -4,7 +4,7 @@ android {
     compileSdkVersion 29
     defaultConfig {
         applicationId "com.wei.chenhuiwan.tiktoktest"
-        minSdkVersion 28
+        minSdkVersion 22
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -25,6 +25,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
-
-    implementation project(':tiktoktest2')
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    // UiAutomator Testing
+    androidTestImplementation 'androidx.test.uiautomator:uiautomator:2.2.0'
 }
